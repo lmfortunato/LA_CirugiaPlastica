@@ -1,0 +1,474 @@
+/*VARIABLES*/
+/* GENERAL */
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,500&family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 05px;
+  color: #3756a3;
+  text-align: center;
+  margin-top: 30px; }
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 05px;
+  color: #3756a3;
+  text-align: center; }
+
+.error404 {
+  background-color: #c7cedb;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0; }
+  .error404 h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    margin-top: 0; }
+  .error404 img {
+    width: 450px; }
+  .error404 .btn {
+    width: 300px;
+    margin: 100px; }
+
+/* HEADER */
+header {
+  background-color: white;
+  color: #2e3532;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0; }
+  header img:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+    cursor: pointer; }
+
+nav {
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+  nav ul {
+    list-style: none;
+    font-size: 0; }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      text-decoration: none;
+      color: #3756a3;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      margin: 0 10px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #3756a3;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s; }
+      nav ul li:hover ul {
+        display: block; }
+    nav ul ul {
+      position: absolute;
+      display: none;
+      padding: 20px;
+      line-height: 30px;
+      background-color: #c7cedb;
+      opacity: 0.8; }
+      nav ul ul li {
+        display: block;
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: #c7cedb; }
+
+a:hover {
+  background-size: 100% 2px; }
+
+a:focus {
+  background-size: 100% 2px; }
+
+/* MAIN INDEX */
+.mainIndex {
+  background-color: white; }
+
+.sectionMainIndex {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 30px; }
+
+.mainIndex__imagen {
+  padding: 20px;
+  max-width: 100%; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 05px;
+  color: #3756a3; }
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 05px;
+  color: #3756a3; }
+
+.mainIndex__description {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  word-spacing: 2px;
+  padding: 30px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #818181; }
+  .mainIndex__description h3 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: #818181; }
+  .mainIndex__description p {
+    color: black;
+    font-family: "Montserrat", sans-serif; }
+
+/* MAIN CIRUGIA PLASTICA */
+.mainCirugiaPlastica {
+  background: linear-gradient(to top, lightgrey, white); }
+
+.mainCirugiaPlastica__banner img {
+  width: 100%; }
+
+.containerCirugiaPlastica {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(11, auto);
+  grid-row-gap: 30px;
+  grid-column-gap: 20px;
+  padding: 30px; }
+  .containerCirugiaPlastica h1 {
+    font-size: 50px;
+    font-weight: bolder; }
+
+.artCirugiaPlastica {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px; }
+  .artCirugiaPlastica h3 {
+    padding: 30px;
+    color: #818181;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-weight: bolder; }
+  .artCirugiaPlastica .containerCirugiaDescription {
+    align-items: center;
+    justify-items: space-around; }
+  .artCirugiaPlastica img {
+    width: 250px; }
+    .artCirugiaPlastica img:hover {
+      transform: translateX(20px);
+      transform: translateY(20px);
+      cursor: pointer; }
+
+/* MAIN MEDICINA ESTETICA */
+.mainMedicinaEstetica {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background-color: grey; }
+  .mainMedicinaEstetica section article {
+    margin-bottom: 20px; }
+
+.card {
+  height: 100%;
+  background-color: lightgrey; }
+
+.card__button {
+  position: bottom; }
+
+/* MAIN GALERIA */
+main.mainGaleria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, auto);
+  grid-row-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 30px; }
+  main.mainGaleria div img {
+    width: 300px; }
+
+/* MAIN CONTACTO */
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 30px;
+  align-content: center;
+  justify-content: center; }
+
+.headingContacto {
+  display: block; }
+
+.formularioDeContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 100px; }
+  .formularioDeContacto iframe {
+    width: 500px; }
+
+.mapa h3 {
+  text-align: center;
+  color: #3756a3;
+  margin: 30px; }
+
+.mapa h4 {
+  color: #3756a3;
+  margin: 20px; }
+
+.mapa iframe {
+  display: flex;
+  flex-direction: column;
+  width: 400px; }
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 20px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  background-color: lightgrey;
+  color: #3756a3;
+  width: 500px; }
+  .formulario form label {
+    padding: 05px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem; }
+  .formulario form input {
+    background-color: grey;
+    color: white;
+    width: 50%;
+    height: 25px;
+    font-family: "Montserrat", sans-serif;
+    margin: 05px;
+    border-radius: 15px; }
+  .formulario form select {
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 25px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
+  .formulario form fieldset {
+    font-family: "Montserrat", sans-serif;
+    margin: 20px;
+    text-align: center; }
+
+/* FOOTER */
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  background-color: black;
+  background-color: #c7cedb;
+  width: 100%; }
+  .footer__container ul {
+    padding-left: 0; }
+
+.logoFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+  .logoFooter img {
+    width: 150px; }
+
+.footer__container__contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+  .footer__container__contacto h4 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-family: 'Bitter', serif; }
+  .footer__container__contacto ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: left;
+    justify-items: center;
+    align-items: center;
+    font-family: Verdana Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 40px; }
+    .footer__container__contacto ul li img {
+      margin: 10px; }
+
+.footer__container__secciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+  .footer__container__secciones ul li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    font-family: Verdana Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 40px; }
+    .footer__container__secciones ul li a {
+      text-decoration: none;
+      color: #3756a3; }
+  .footer__container__secciones h4 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-family: 'Bitter', serif;
+    padding: 20px; }
+
+.footer__container__redes {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background-color: #c7cedb; }
+  .footer__container__redes ul {
+    padding-left: 0; }
+    .footer__container__redes ul li {
+      list-style: none;
+      color: none;
+      display: inline;
+      text-align: center;
+      line-height: 40px; }
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background-color: #c7cedb;
+  padding-left: 0; }
+
+@media only screen and (min-width: 768px) {
+  .sectionMainIndex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .formularioDeContacto {
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    flex-direction: row; }
+    .formularioDeContacto .mapa {
+      height: 100%; }
+      .formularioDeContacto .mapa iframe {
+        width: 600px;
+        height: 450px;
+        align-items: center;
+        justify-items: center; }
+  .mainIndex__imagen {
+    margin: 30px;
+    padding: 20px;
+    align-items: center;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column; }
+  .mainIndex__description {
+    display: flex;
+    display: inline-block;
+    width: 50%; }
+  .containerCirugiaDescription {
+    width: 50%;
+    align-items: center;
+    justify-items: center; }
+  main.mainGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 20px; }
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 20px; }
+  .logoFooter img {
+    width: 250px; } }
+
+@media only screen and (min-width: 768px) {
+  .artCirugiaPlastica {
+    height: 500px;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center; }
+    .artCirugiaPlastica p {
+      margin: 20px; }
+    .artCirugiaPlastica h3 {
+      margin: 20px; }
+    .artCirugiaPlastica img {
+      width: 300px; } }
+
+@media only screen and (min-width: 1100px) {
+  main.mainGaleria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); } }
+
+.periscopio-icon {
+  height: 30px; }
+
+.arroba-icon {
+  height: 30px; }
+
+.instagram-icon {
+  height: 30px; }
+
+.facebook-icon {
+  height: 30px; }
+
+.whatsapp-icon {
+  height: 30px; }

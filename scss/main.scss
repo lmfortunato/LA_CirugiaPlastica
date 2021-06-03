@@ -1,0 +1,591 @@
+/*VARIABLES*/
+$fontFamily: 'Montserrat', sans-serif;
+$bgFooter: rgb(199, 206, 219);
+$pixels: 100px;
+$colortitle: rgb(55, 86, 163);
+
+/* GENERAL */
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,500&family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap";
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-family: $fontFamily;
+	margin-bottom: 05px;
+	color: rgb(55, 86, 163);
+	text-align: center;
+	margin-top: 30px;
+}
+h2 {
+	font-family: $fontFamily;
+	margin-bottom: 05px;
+	color: rgb(55, 86, 163);
+	text-align: center;
+}
+
+.error404 {
+	background-color: $bgFooter;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	margin:0;
+	padding:0;
+	h1 {
+		font-size: 70px;
+		font-weight: bolder;
+		margin-top:0;
+	}
+
+	img {
+		width: 450px;
+	}
+
+	.btn {
+		width:300px;
+		margin: 100px;
+
+	}
+}
+/* HEADER */
+
+header {
+	background-color: white;
+	color: rgb(46, 53, 50);
+	padding: 0;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+	img {
+		&:hover {
+			transform: rotate(360deg);
+			transition: transform 1s;
+			cursor: pointer;
+		}
+	}
+}
+nav {
+	padding: 10px 40px 10px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	ul {
+		list-style: none;
+		font-size: 0;
+		li {
+			list-style: none;
+			display: inline-block;
+			text-decoration: none;
+			color: rgb(55, 86, 163);
+			font-size: 16px;
+			font-family: $fontFamily;
+			margin: 0 10px;
+			a {
+				text-decoration: none;
+				color: rgb(55, 86, 163);
+				text-transform: uppercase;
+				text-decoration: none;
+				background-image: linear-gradient(currentColor, currentColor);
+				background-position: 0% 100%;
+				background-repeat: no-repeat;
+				background-size: 0% 2px;
+				transition: background-size .3s;
+			}
+			&:hover {
+				ul {
+					display: block;
+				}
+			}
+		}
+		ul {
+			position: absolute;
+			display: none;
+			padding: $pixels/5;
+			line-height: ($pixels - 10px)/3;
+			background-color: rgb(199, 206, 219);
+			opacity: 0.8;
+			li {
+				display: block;
+				font-size: 14px;
+				text-transform: uppercase;
+				background-color: rgb(199, 206, 219);
+			}
+		}
+	}
+}
+a {
+	&:hover {
+		background-size: 100% 2px;
+	}
+	&:focus {
+		background-size: 100% 2px;
+	}
+}
+
+/* MAIN INDEX */
+
+.mainIndex {
+	background-color: white;
+}
+
+.sectionMainIndex {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: ($pixels - 10px) /3;
+}
+.mainIndex__imagen {
+	padding: $pixels /5;
+	max-width: 100%;
+}
+h1 {
+	font-family: $fontFamily;
+	margin-bottom: 05px;
+	color: rgb(55, 86, 163);
+}
+h2 {
+	font-family: $fontFamily;
+	margin-bottom: 05px;
+	color: rgb(55, 86, 163);
+}
+.mainIndex__description {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	word-spacing: 2px;
+	padding: ($pixels - 10px) /3;
+	width: 100%;
+	font-family: $fontFamily;
+	font-weight: bold;
+	color: rgb(129, 129, 129);
+	h3 {
+		color: black;
+		font-size: 35px;
+		text-align: center;
+		line-height: ($pixels - 20px) /2;
+		letter-spacing: 2px;
+		font-weight: bolder;
+		padding: $pixels /4;
+		font-family: $fontFamily;
+		color: rgb(129, 129, 129);
+	}
+	p {
+		color: black;
+		font-family: $fontFamily;
+	}
+}
+
+/* MAIN CIRUGIA PLASTICA */
+
+.mainCirugiaPlastica {
+	background: linear-gradient(to top, lightgrey, white);
+}
+.mainCirugiaPlastica__banner {
+	img {
+		width: 100%;
+	}
+}
+.containerCirugiaPlastica {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(11, auto);
+	grid-row-gap: ($pixels - 10px) /3;
+	grid-column-gap: $pixels / 5;
+	padding: ($pixels - 10px) /3;
+
+	h1{
+		font-size: 50px;
+		font-weight: bolder;
+	}
+
+
+}
+.artCirugiaPlastica {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: $fontFamily;
+	justify-content: center;
+	align-content: center;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	word-spacing: 2px;
+	h3 {
+		padding: ($pixels - 10px) /3;
+		color: rgb(129, 129, 129);
+		font-size: 35px;
+		text-align: center;
+		line-height: ($pixels - 20px) /2;
+		letter-spacing: 2px;
+		font-weight: bolder;
+	}
+	.containerCirugiaDescription {
+		align-items: center;
+		justify-items: space-around;
+	}
+	img {
+		width: ($pixels * 2) + 50;
+		&:hover {
+			transform: translateX(20px);
+			transform: translateY(20px);
+			cursor: pointer;
+		}
+	}
+}
+
+/* MAIN MEDICINA ESTETICA */
+
+.mainMedicinaEstetica {
+	width: 100%;
+	padding: ($pixels - 20px) /2;
+	text-align: center;
+	background-color: grey;
+	section {
+		article {
+			margin-bottom: $pixels /5;
+		}
+	}
+}
+.card {
+	height: 100%;
+	background-color: lightgrey;
+}
+
+.card__button {
+    position: bottom;
+}
+
+/* MAIN GALERIA */
+
+main.mainGaleria {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat( 9, auto);
+	grid-row-gap: ($pixels - 10px) /3;
+	justify-items: center;
+	align-items: center;
+	padding: ($pixels - 10px) /3;
+	div {
+		img {
+			width: $pixels *3;
+		}
+	}
+}
+
+/* MAIN CONTACTO */
+
+.mainContacto {
+	display: flex;
+	flex-direction: column;
+	grid-row-gap: ($pixels - 10px) /3;
+	align-content: center;
+	justify-content: center;
+	// padding: $pixels;
+}
+
+.headingContacto {
+	display: block;
+}
+
+.formularioDeContacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding: $pixels;
+
+	iframe {
+		width: 500px;
+	}
+}
+
+.mapa {
+	
+	h3 {
+		text-align: center;
+		color: $colortitle;
+		margin: 30px;
+	}
+	h4 {
+		color:$colortitle;
+		margin: 20px;
+	}
+	iframe {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	}
+}
+.formulario {
+	form{
+	display: flex;
+	flex-direction: column;
+	margin: $pixels /4;
+	padding: $pixels /5;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	align-content: center;
+	border-radius: 5px;
+	background-color:lightgrey;
+	color: $colortitle;
+	width: 500px;
+	label {
+		padding: 05px;
+		font-family: $fontFamily;
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+	input {
+		background-color: grey;
+		color: white;
+		width: 50%;
+		height: $pixels /4;
+		font-family: $fontFamily;
+		margin: 05px;
+		border-radius: 15px;
+	}
+	select {
+		background-color: white;
+		color: black;
+		width: 50%;
+		height: $pixels /4;
+		font-family: $fontFamily;
+		text-align: center;
+	}
+	fieldset {
+		font-family: $fontFamily;
+		margin: $pixels /5;
+		text-align: center;
+	}
+}
+}
+
+/* FOOTER */
+
+.footer__container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat( 3, auto);
+	grid-row-gap: $pixels /5;
+	justify-content: center;
+	align-content: center;
+	padding: $pixels /5;
+	background-color: black;
+	background-color: $bgFooter;
+	width: 100%;
+	ul {
+		padding-left: 0;
+	}
+	
+}
+
+.logoFooter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+
+	img {
+		width: $pixels + 50px;
+		
+	}
+}
+
+.footer__container__contacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	h4 {
+		font-size: 20px;
+		text-align: center;
+		color: black;
+		padding: $pixels /5;
+		font-family: 'Bitter', serif;
+	}
+	ul {
+		li {
+			display: flex;
+			flex-direction: row;
+			list-style: none;
+			text-align: left;
+			justify-items: center;
+			align-items: center;
+			font-family: Verdana Tahoma, sans-serif;
+			font-size: 18px;
+			line-height: ($pixels - 20px) /2;
+
+			img {
+				margin: $pixels /10;
+			}
+		}
+	}
+	
+}
+.footer__container__secciones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	ul {
+		li {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			text-align: center;
+			font-family: Verdana Tahoma, sans-serif;
+			font-size: 18px;
+			line-height: ($pixels - 20px) /2;
+			a {
+				text-decoration: none;
+				color: rgb(55, 86, 163);
+			}
+		}
+	}
+	h4 {
+		font-size: 20px;
+		text-align: center;
+		color: black;
+		font-family: 'Bitter', serif;
+		padding: $pixels /5;
+	}
+}
+.footer__container__redes {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	background-color: $bgFooter;
+	ul {
+	padding-left: 0;
+		li {
+			list-style: none;
+			color: none;
+			display: inline;
+			text-align: center;
+			line-height: ($pixels - 20px) /2;
+		}
+
+	}
+}
+
+.copyright {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	background-color: $bgFooter;
+	padding-left:0;
+}
+
+@media only screen and (min-width: 768px) {
+	.sectionMainIndex {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.formularioDeContacto{
+		align-items: center;
+		justify-items: center;
+		justify-content: space-around;
+		flex-direction: row;
+
+		.mapa {
+			height: 100%;
+			iframe {
+			width: 600px;
+			height: 450px;
+			align-items: center;
+			justify-items: center;
+			}
+		}
+	}
+	.mainIndex__imagen {
+		margin: ($pixels - 10px) /3;
+		padding: $pixels /5;
+		align-items: center;
+		max-width: ($pixels *2) + 50px;
+		display: flex;
+		flex-direction: column;
+	}
+	.mainIndex__description {
+		display: flex;
+		display: inline-block;
+		width: 50%;
+	}
+
+
+	.containerCirugiaDescription {
+		width: 50%;
+		align-items: center;
+		justify-items: center;
+	}
+
+	main.mainGaleria {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-gap: $pixels /5;
+	}
+	.footer__container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-gap: $pixels /5;
+	}
+
+	.logoFooter {
+		img{
+			width: ($pixels *2) + 50px;
+		}
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.artCirugiaPlastica {
+		height: 500px;
+		flex-direction: row;
+		margin: $pixels /5;
+		justify-content: space-around;
+    	align-items: center;
+		p {
+			margin: $pixels /5;
+		}
+		h3 {
+			margin: $pixels /5;
+		}
+		img {
+			width: $pixels *3;
+		}
+	}
+}
+@media only screen and (min-width:1100px) {
+	main.mainGaleria {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}	
+}
+
+
+@each $icon in periscopio, arroba, instagram, facebook, whatsapp {
+	.#{$icon}-icon {
+		height: ($pixels - 10px) /3;
+	}
+}

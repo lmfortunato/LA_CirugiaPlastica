@@ -1,0 +1,462 @@
+/* GENERAL */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,500&family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap');
+
+/* HEADER */
+
+header {
+	background-color: white;
+	color: rgb(46, 53, 50);
+	/* height: 15vh; */
+	padding: 0;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+}
+
+header img:hover {
+	transform: rotate(360deg);
+	transition: transform 1s;
+	cursor: pointer;
+}
+
+nav {
+	padding: 10px 40px 10px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	font-size: 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(55, 86, 163);
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(55, 86, 163);
+	text-transform: uppercase;
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+
+}
+
+a:hover,
+a:focus {
+	background-size: 100% 2px;
+}
+
+nav ul ul {
+	position: absolute;
+	display: none;
+	padding: 20px;
+	line-height: 30px;
+	background-color: rgb(199, 206, 219);
+	opacity: 0.8;
+}
+
+nav ul ul li {
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: rgb(199, 206, 219);
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+
+/* MAIN */
+
+.mainIndex {
+	background-color: white;
+}
+
+.sectionMainIndex {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+	.sectionMainIndex {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.imagenLoaiza {
+		margin: 30px;
+		padding: 20px;
+		align-items: center;
+		max-width: 250px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.acercaDeMi {
+		display: flex;
+		display: inline-block;
+		width: 50%;
+	}
+
+}
+
+.imagenLoaiza {
+	padding: 20px;
+	max-width: 100%;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 05px;
+	color: rgb(55, 86, 163);
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 05px;
+	color: rgb(55, 86, 163);
+}
+
+.acercaDeMi {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	word-spacing: 2px;
+	padding: 30px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: rgb(129, 129, 129);
+
+}
+
+.acercaDeMi h3 {
+	color: black;
+	font-size: 35px;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	padding: 25px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(129, 129, 129);
+
+}
+
+.acercaDeMi p {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* #banner {
+	text-align: center;
+	width: 100%;
+} */
+
+/* MAIN CIRUGIA PLASTICA */
+
+.mainCirugiaPlastica {
+
+	background: linear-gradient(to top, lightgrey, white);
+
+}
+
+.bannerCirugiaPlastica img {
+	width: 100%;
+}
+
+.containerCirugiaPlastica {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(11, auto);
+	grid-row-gap: 30px;
+	grid-column-gap: 20px;
+	padding: 30px;
+}
+
+.artCirugiaPlastica {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.artCirugiaPlastica h3 {
+	padding: 30px;
+	color: rgb(129, 129, 129);
+}
+
+.artCirugiaPlastica img {
+	width: 250px;
+}
+
+.artCirugiaPlastica img:hover {
+	transform: translateX(20px);
+	transform: translateY(20px);
+	cursor: pointer;
+}
+
+@media only screen and (min-width:768px) {
+	.artCirugiaPlastica {
+		flex-direction: row;
+		margin: 20px;
+	}
+
+	.artCirugiaPlastica p,
+	.artCirugiaPlastica h3 {
+		margin: 20px;
+	}
+
+	.artCirugiaPlastica img {
+		width: 300px;
+	}
+}
+
+/* MAIN MEDICINA ESTETICA */
+
+.mainMedicinaEstetica {
+	width: 100%;
+	padding: 40px;
+	text-align: center;
+	background-color: grey;
+}
+
+.card {
+	height: 100%;
+	background-color: lightgrey;
+}
+
+.mainMedicinaEstetica section article {
+	margin-bottom: 20px;
+}
+
+/* MAIN GALERIA */
+
+main.mainGaleria {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(9, auto);
+	grid-row-gap: 30px;
+	justify-items: center;
+	align-items: center;
+	padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+	main.mainGaleria {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-gap: 20px;
+	}
+
+}
+
+@media only screen and (min-width:1100px) {
+	main.mainGaleria {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
+}
+
+main.mainGaleria div img {
+	width: 300px;
+}
+
+/* MAIN CONTACTO */
+
+.mainContacto {
+	/* height: 80vh; */
+	background-color: rgb(199, 206, 219);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 100px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	padding: 20px;
+	align-items: center;
+	border-radius: 5px;
+	background-color: rgb(46, 53, 50);
+	color: white;
+}
+
+form label {
+	padding: 05px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+form input {
+	background-color: white;
+	color: black;
+	width: 100%;
+	height: 25px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 05px;
+}
+
+form select {
+	background-color: white;
+	color: black;
+	width: 100%;
+	height: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+form fieldset {
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px;
+}
+
+.buttonContacto {
+	text-transform: uppercase;
+}
+
+/* FOOTER */
+
+.containerFooter {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-row-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	padding: 20px;
+	background-color: rgb(199, 206, 219);
+	width: 100%;
+}
+
+.containerFooter ul {
+	padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.containerFooter {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-gap: 20px;
+	}
+
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+
+}
+
+.contacto h4 {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	padding: 20px;
+	font-family: 'Bitter', serif;
+}
+
+.contacto ul li {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	text-align: center;
+	font-family: Verdana Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.secciones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.secciones ul li {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	text-align: center;
+	font-family: Verdana Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.secciones ul li a {
+	text-decoration: none;
+	color: rgb(55, 86, 163);
+}
+
+.secciones h4 {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	font-family: 'Bitter', serif;
+	padding: 20px;
+
+}
+
+.redesSociales {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	/* flex-grow: 1; */
+}
+
+.redesSociales h4 {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	font-family: 'Bitter', serif;
+	padding: 20px;
+}
+
+.redesSociales ul li {
+	list-style: none;
+	color: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 40px;
+}
