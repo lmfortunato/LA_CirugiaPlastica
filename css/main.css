@@ -482,11 +482,13 @@ section {
   justify-content: center;
   background-color: #c7cedb; }
   .footer__container__redes ul {
-    padding-left: 0; }
+    padding-left: 0;
+    display: flex;
+    flex-direction: row; }
     .footer__container__redes ul li {
       list-style: none;
       color: none;
-      display: inline;
+      padding: 10px;
       text-align: center;
       line-height: 40px; }
 
@@ -494,7 +496,7 @@ section {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #c7cedb;
   padding-left: 0; }
 
@@ -524,7 +526,7 @@ section {
   .galeriaBg {
     background-image: url(../img/bannerEstetica2.jpg); }
   .medBg {
-    background-image: url(../img/hermosa-joven-recibiendo-inyeccion-cosmetica-botox-su-rostro_1301-7787.jpg); }
+    background-image: url(../img/bannerMedicinaEstetica4.jpg); }
   .gridBoxServ {
     padding: 4rem 5rem; }
     .gridBoxServ img {
@@ -604,7 +606,7 @@ section {
   .galeriaBg {
     background-image: url(../img/bannerEstetica.jpg); }
   .medBg {
-    background-image: url(../img/bannerMedicinaEstetica3.jpg); }
+    background-image: url(../img/bannermedicinaestetica-1030x360.jpg); }
   .servBg {
     background-image: url(../img/bannerCirugiaPlastica.jpg); }
   .gridBoxServ {
