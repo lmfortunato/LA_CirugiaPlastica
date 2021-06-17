@@ -27,6 +27,7 @@
 
 	<!-- CSS-->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="shortcut icon" href="../img/logocolor.png" type="image/x-icon">
 </head>
@@ -53,46 +54,9 @@
 						</li>
 						<li>
 							<a href="cirugia_plastica.html" id="navbarDropdown">Cirugia Plastica</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="cirugia_plastica.html#implantesMamarios">Protesis
-										mamarias</a></li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#reduccionMamaria">Reduccion
-										mamaria</a></li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#ginecomastia">Ginecomastia</a>
-								</li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#rinoplastia">Rinoplastia</a>
-								</li>
-								<li><a class="dropdown-item"
-										href="cirugia_plastica.html#blefaroplastia">Blefaroplastia</a></li>
-								<li><a class="dropdown-item"
-										href="cirugia_plastica.html#auriculoplastia">Auriculoplastia</a></li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#bichectomia">Bichectomia</a>
-								</li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#liftingCervicofacial">Lifting
-										cervicofacial</a></li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#lipoaspiracion">Lipoaspiración
-										abdominal</a></li>
-								<li><a class="dropdown-item"
-										href="cirugia_plastica.html#dermolipectomia">Dermolipectomia</a></li>
-								<li><a class="dropdown-item" href="cirugia_plastica.html#cirugiaIntima">Cirugia
-										intima</a></li>
-							</ul>
 						</li>
 						<li>
 							<a href="medicina_estetica.html">Medicina Estetica</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="medicina_estetica.html">Mesoterapia</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Peeling</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Relleno</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Rinomodelacion</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Armonizacion facial</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Botox</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Plasma</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Fosfatidilcolina</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Hilos tensores</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Escleroterapia</a></li>
-								<li><a class="dropdown-item" href="medicina_estetica.html">Perfilado mandibular</a></li>
-							</ul>
 						</li>
 						<li class="nav-item">
 							<a href="galeria.html">Galeria</a>
@@ -109,56 +73,53 @@
 	</header>
 
 	<!-- MAIN CONTENT -->
-
 	<main class="mainContacto">
+		<section class="contBg">
+			<h1 class="title2Size" data-aos="fade-right" data-aos-duration="500">Contacto</h1>
+			<a href="#scroll-down" class="hvr-icon-sink" data-aos="fade-right" data-aos-duration="2000"><img
+					src="../img/arrow-down.svg" alt="flecha apuntando hacia abajo" class="footerImg hvr-icon"></a>
+		</section>
 
-		<div class="headingContacto">
-			<h1>FORMULARIO DE CONTACTO</h1>
-			<h2>Deja tu consulta para recibir asesoramiento personalizado</h2>
-		</div>
+		<section class="container-fluid" id="scroll-down">
+			<div class="row h-100 bgCont px-5 p py-5">
+				<div class="col-lg-5 maps">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889526!2d-58.38375908513086!3d-34.603734465005225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1622155702520!5m2!1ses!2sar"
+						width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+					</iframe>
+				</div>
 
-		<section class="formularioDeContacto">
-			<div class="formulario">
-					<form action="#">
-					<h1>Formulario de contacto</h1>
-					<label for="nombre">Nombre Completo</label>
-					<input type="text" name="nombre" placeholder="Escriba su nombre aqui"><br>
+				<div class="col-lg-7">
+					<h2 class="contPadding">Formulario de Contacto</h2>
+					<form action="mailto:lucilamfortunato@gmail.com.com" method="POST" enctype=”multipart/form-data”
+						name=”EmailTestForm”>
+						<div class="form-row">
+							<div class="col pb-3" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="700">
+								<label for="nombre">Nombre</label>
+								<input type="text" class="form-control" placeholder="Nombre" id="nombre">
+							</div>
 
-					<label for="email">Email</label>
-					<input type="email" name="email" placeholder="contacto@gmail.com"><br>
+							<div class="col pb-3" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="700">
+								<label for="apellido">Apellido</label>
+								<input type="text" class="form-control" placeholder="Apellido" id="apellido">
+							</div>
+						</div>
 
-					<label for="tel">Telefono de contacto</label>
-					<input type="tel" name="tel"><br>
+						<div class="form-group pb-3" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="700">
+							<label for="exampleFormControlInput1">Email</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1"
+								placeholder="name@example.com">
+						</div>
 
-					<label for="obrasocial">Obra social</label>
-					<select name="obrasocial" id="#">
-						<option value="swissmedical">Swiss Medical</option>
-						<option value="medife">Medifé</option>
-						<option value="osde">OSDE</option>
-						<option value="galeno">Galeno</option>
-						<option value="particular">Particular</option>
-					</select><br>
+						<div class="form-group pb-3" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="700">
+							<label for="exampleFormControlTextarea1">Escriba aqui su consulta</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+						</div>
 
-					<label for="newsletter">Deseo suscribirme al Newsletter</label>
-					<input type="checkbox" name="newsletter" value="newsletter"><br>
-
-					<fieldset>
-						<legend>Escribe tu consulta</legend>
-						<textarea name="comentario" id="#" cols="40" rows="10"></textarea>
-					</fieldset>
-
-					<input type="submit" value="envíar" class="buttonContacto">
-					<input type="reset" value="cancelar" class="buttonContacto">
-				</form>
-			</div>
-			<div class="mapa">
-				<h3>HACE CLICK EN EL MAPA</h3>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889526!2d-58.38375908513086!3d-34.603734465005225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1622155702520!5m2!1ses!2sar"
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-				</iframe>
-				<h4>Lineas de colectivos: 41, 161, 67, 130, 245,98</h4>
-				<h4>Lineas de subte: A, B, C, D, H</h4>
+						<button type="submit" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="1500"
+							data-aos-duration="700">Enviar</button>
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -187,7 +148,7 @@
 							<img class="arroba-icon" src="../img/arroba.svg"
 								alt="Mail para contactarse con la Dra. Loaiza">
 						</a>
-						CORREO: loaizaaguilar@gmail.com
+						CORREO: example@gmail.com
 					</li>
 
 				</ul>
@@ -231,6 +192,10 @@
 		</div>
 
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 

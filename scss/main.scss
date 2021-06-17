@@ -5,10 +5,10 @@ $pixels: 100px;
 $colortitle: rgb(55, 86, 163);
 
 /* GENERAL */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,500&family=Work+Sans:ital,wght@0,100;0,600;1,100&display=swap";
-
 
 
 * {
@@ -22,8 +22,9 @@ h1 {
 	color: rgb(55, 86, 163);
 	text-align: center;
 	margin-top: 30px;
+	
 }
-h2 {
+h2 , h3, h4 {
 	font-family: $fontFamily;
 	margin-bottom: 05px;
 	color: rgb(55, 86, 163);
@@ -32,6 +33,7 @@ h2 {
 
 .error404 {
 	background-color: $bgFooter;
+	display: flex;
 	justify-content: center;
 	align-content: center;
 	justify-items: center;
@@ -136,144 +138,308 @@ a {
 
 .mainIndex {
 	background-color: white;
-}
-
-.sectionMainIndex {
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	grid-row-gap: ($pixels - 10px) /3;
-}
-.mainIndex__imagen {
-	padding: $pixels /5;
-	max-width: 100%;
-}
-h1 {
-	font-family: $fontFamily;
-	margin-bottom: 05px;
-	color: rgb(55, 86, 163);
-}
-h2 {
-	font-family: $fontFamily;
-	margin-bottom: 05px;
-	color: rgb(55, 86, 163);
-}
-.mainIndex__description {
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	text-align: center;
-	word-spacing: 2px;
-	padding: ($pixels - 10px) /3;
-	width: 100%;
-	font-family: $fontFamily;
-	font-weight: bold;
-	color: rgb(129, 129, 129);
-	h3 {
-		color: black;
-		font-size: 35px;
-		text-align: center;
-		line-height: ($pixels - 20px) /2;
-		letter-spacing: 2px;
-		font-weight: bolder;
-		padding: $pixels /4;
-		font-family: $fontFamily;
-		color: rgb(129, 129, 129);
-	}
-	p {
-		color: black;
-		font-family: $fontFamily;
+	.carousel {
+		padding: 0;
 	}
 }
 
 /* MAIN CIRUGIA PLASTICA */
 
-.mainCirugiaPlastica {
-	background: linear-gradient(to top, lightgrey, white);
+#serviciosBody {
+	background-color: #EFF4F8;
+	width: 100%;
 }
-.mainCirugiaPlastica__banner {
-	img {
-		width: 100%;
-	}
-}
-.containerCirugiaPlastica {
-	display: grid;
+.servBg {
+	background-image: url(../img/bannerCirugiaPlasticaResponsive.jpg);
+	background-size: cover;
+	height: 90vh;
+	background-attachment: fixed;
+	display: flex;
 	align-items: center;
-	justify-items: center;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(11, auto);
-	grid-row-gap: ($pixels - 10px) /3;
-	grid-column-gap: $pixels / 5;
-	padding: ($pixels - 10px) /3;
-
-	h1{
-		font-size: 50px;
-		font-weight: bolder;
-	}
-
-
+	justify-content: center;
+	flex-direction: column;
 }
-.artCirugiaPlastica {
+.serv4 {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
 	text-align: center;
-	font-family: $fontFamily;
-	justify-content: center;
-	align-content: center;
-	font-size: 18px;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	word-spacing: 2px;
+	justify-content: space-between;
+	background-color: white;
 	h3 {
-		padding: ($pixels - 10px) /3;
-		color: rgb(129, 129, 129);
-		font-size: 35px;
-		text-align: center;
-		line-height: ($pixels - 20px) /2;
-		letter-spacing: 2px;
-		font-weight: bolder;
+		padding-bottom: 10px;
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+		font-weight: 500;
 	}
-	.containerCirugiaDescription {
-		align-items: center;
-		justify-items: space-around;
-	}
+}
+.gridBoxServ {
+	display: grid;
+	grid-template-areas: 'img' 'titulo' 'parrafo';
+	padding: 50px 20px;
+	background-color: #EFF4F8;
 	img {
-		width: ($pixels * 2) + 50;
-		&:hover {
-			transform: translateX(20px);
-			transform: translateY(20px);
-			cursor: pointer;
+		grid-area: img;
+		width: 95%;
+		justify-self: center;
+	}
+	h3 {
+		grid-area: titulo;
+		padding-top: 25px;
+		text-align: center;
+	}
+	p {
+		grid-area: parrafo;
+		padding: 10px 10px 0px;
+		text-align: justify;
+		font-weight: 300;
+	}
+}
+.gridBoxServ2 {
+	display: grid;
+	grid-template-areas: 'img' 'titulo' 'parrafo';
+	padding: 50px 20px;
+	background-color: white;
+	img {
+		grid-area: img;
+		width: 95%;
+		justify-self: center;
+	}
+	h1 {
+		grid-area: titulo;
+		text-align: center;
+	}
+	h3 {
+		grid-area: titulo;
+		padding-top: 25px;
+		text-align: center;
+	}
+	p {
+		grid-area: parrafo;
+		padding: 10px 10px 0px;
+		text-align: justify;
+		font-weight: 300;
+	}
+}
+.hvr-icon-sink {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	.hvr-icon {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	&:hover {
+		.hvr-icon {
+			-webkit-transform: translateY(4px);
+			transform: translateY(4px);
 		}
 	}
+	&:focus {
+		.hvr-icon {
+			-webkit-transform: translateY(4px);
+			transform: translateY(4px);
+		}
+	}
+	&:active {
+		.hvr-icon {
+			-webkit-transform: translateY(4px);
+			transform: translateY(4px);
+		}
+	}
+}
+.footerImg {
+	width: 8vw;
+}
+img {
+	vertical-align: middle;
+}
+svg {
+	vertical-align: middle;
+	width: 8vw;
 }
 
 /* MAIN MEDICINA ESTETICA */
 
-.mainMedicinaEstetica {
-	width: 100%;
-	padding: ($pixels - 20px) /2;
-	text-align: center;
-	background-color: grey;
-	section {
-		article {
-			margin-bottom: $pixels /5;
+.medBg {
+	background-image: url(../img/banner1.jpg);
+	background-size: cover;
+	height: 90vh;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.btn-primary {
+	&:hover {
+		background-color: $bgFooter;
+		border-color: $bgFooter;
+		box-shadow: none;
+		outline: none;
+	}
+	&:focus {
+		background-color: $bgFooter;
+		border-color: $bgFooter;
+		box-shadow: none;
+		outline: none;
+	}
+	color: #fff;
+	background-color: $bgFooter;
+	border-color: $bgFooter;
+}
+section {
+	padding: 60px 0;
+	.section-title {
+		text-align: center;
+		color: $colortitle;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+}
+.team {
+	.card {
+		border: none;
+		background: #ffffff;
+	}
+}
+.image-flip {
+	&:hover {
+		.backside {
+			-webkit-transform: rotateY(0deg);
+			-moz-transform: rotateY(0deg);
+			-o-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+			border-radius: .25rem;
+		}
+		.frontside {
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			-o-transform: rotateY(180deg);
+			transform: rotateY(180deg);
 		}
 	}
 }
-.card {
-	height: 100%;
-	background-color: lightgrey;
+.image-flip.hover {
+	.backside {
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+		border-radius: .25rem;
+	}
+	.frontside {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
 }
-
-.card__button {
-    position: bottom;
+.mainflip {
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.frontside {
+	position: relative;
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	z-index: 2;
+	margin-bottom: 30px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 1s;
+	-moz-transform-style: preserve-3d;
+	-o-transition: 1s;
+	-o-transform-style: preserve-3d;
+	-ms-transition: 1s;
+	-ms-transform-style: preserve-3d;
+	transition: 1s;
+	transform-style: preserve-3d;
+	.card {
+		min-height: 312px;
+		.card-title {
+			color: $colortitle;
+		}
+		.card-body {
+			img {
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+.backside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	-webkit-box-shadow: 5px 7px 9px -4px #9e9e9e;
+	-moz-box-shadow: 5px 7px 9px -4px #9e9e9e;
+	box-shadow: 5px 7px 9px -4px #9e9e9e;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 1s;
+	-moz-transform-style: preserve-3d;
+	-o-transition: 1s;
+	-o-transform-style: preserve-3d;
+	-ms-transition: 1s;
+	-ms-transform-style: preserve-3d;
+	transition: 1s;
+	transform-style: preserve-3d;
+	.card {
+		min-height: 312px;
+		a {
+			font-size: 18px;
+			color: $colortitle;
+		}
+		.card-title {
+			color: $colortitle;
+		}
+	}
+}
+.mainMedicinaEstetica {
+	background-color: #EFF4F8;
 }
 
 /* MAIN GALERIA */
 
-main.mainGaleria {
+.mainGaleria {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat( 9, auto);
@@ -288,95 +454,40 @@ main.mainGaleria {
 	}
 }
 
+.galeriaBg {
+	background-image: url(../img/bannerEstetica2.jpg);
+	background-size: cover;
+	height: 90vh;
+	background-attachment: fixed;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
 /* MAIN CONTACTO */
 
-.mainContacto {
+.maps {
 	display: flex;
-	flex-direction: column;
-	grid-row-gap: ($pixels - 10px) /3;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.contBg {
+	background-image: url(../img/bannerCirugiaPlasticaResponsive.jpg);
+	background-size: cover;
+	height: 90vh;
+	background-attachment: fixed;
+	display: flex;
 	align-content: center;
-	justify-content: center;
-	// padding: $pixels;
-}
-
-.headingContacto {
-	display: block;
-}
-
-.formularioDeContacto {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	align-content: center;
-	padding: $pixels;
-
-	iframe {
-		width: 500px;
-	}
-}
-
-.mapa {
-	
-	h3 {
-		text-align: center;
-		color: $colortitle;
-		margin: 30px;
-	}
-	h4 {
-		color:$colortitle;
-		margin: 20px;
-	}
-	iframe {
-	display: flex;
 	flex-direction: column;
-	width: 400px;
-	}
 }
-.formulario {
-	form{
-	display: flex;
-	flex-direction: column;
-	margin: $pixels /4;
-	padding: $pixels /5;
-	align-items: center;
-	justify-items: center;
-	justify-content: center;
-	align-content: center;
-	border-radius: 5px;
-	background-color:lightgrey;
-	color: $colortitle;
-	width: 500px;
-	label {
-		padding: 05px;
-		font-family: $fontFamily;
-		text-transform: uppercase;
-		font-size: 1rem;
-	}
-	input {
-		background-color: grey;
-		color: white;
-		width: 50%;
-		height: $pixels /4;
-		font-family: $fontFamily;
-		margin: 05px;
-		border-radius: 15px;
-	}
-	select {
-		background-color: white;
-		color: black;
-		width: 50%;
-		height: $pixels /4;
-		font-family: $fontFamily;
-		text-align: center;
-	}
-	fieldset {
-		font-family: $fontFamily;
-		margin: $pixels /5;
-		text-align: center;
-	}
-}
-}
+.contPadding {
+	padding-top: 15px;
+}	  
 
 /* FOOTER */
 
@@ -496,91 +607,292 @@ main.mainGaleria {
 	padding-left:0;
 }
 
-@media only screen and (min-width: 768px) {
-	.sectionMainIndex {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+// MEDIA QUERIES
+
+@media only screen and (min-width: 460px) {
+	.gridBoxServ {
+		padding: 60px 30px 40px;
+		img {
+			width: 90%;
+		}
+		h3 {
+			padding-top: 30px;
+		}
+		p {
+			padding-top: 15px;
+			font-size: 1.2rem;
+		}
 	}
+	.gridBoxServ2 {
+		padding: 60px 30px 40px;
+		img {
+			width: 90%;
+		}
+		h3 {
+			padding-top: 30px;
+		}
+		p {
+			padding-top: 15px;
+			font-size: 1.2rem;
+		}
+	}
+}
 
-	.formularioDeContacto{
-		align-items: center;
-		justify-items: center;
-		justify-content: space-around;
-		flex-direction: row;
+@media only screen and (min-width: 600px) {
+	.servBg {
+		background-image: url(../img/wallpaperCirugiaPlastica.jpg);
+	}
+	.galeriaBg {
+		background-image: url(../img/bannerEstetica2.jpg);
+	}
+	.medBg {
+		background-image: url(../img/hermosa-joven-recibiendo-inyeccion-cosmetica-botox-su-rostro_1301-7787.jpg);
+	}
+	.gridBoxServ {
+		padding: 4rem 5rem;
+		img {
+			width: 90%;
+			align-self: center;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
+	.gridBoxServ2 {
+		padding: 4rem 5rem;
+		img {
+			width: 90%;
+			align-self: center;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
+	.contBg {
+	  background-image: url(../img/wallpaperCirugiaPlastica.jpg); } }
+	
 
-		.mapa {
-			height: 100%;
-			iframe {
-			width: 600px;
-			height: 450px;
-			align-items: center;
-			justify-items: center;
+	  @media only screen and (min-width: 760px) {
+		.mainGaleria {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(4, auto);
+			grid-gap: $pixels /5;
+			div {
+				img {
+					width: ($pixels *3) +50px;
+				}
+			}
+		}
+		.footer__container {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(1, auto);
+			grid-gap: $pixels /5;
+		}
+	
+		.logoFooter {
+			img{
+				width: ($pixels *2) + 50px;
+			}
+		}
+		.servBg, .galeriaBg, .contBg {
+			h1 {
+				font-size: 3rem;
+			}
+			h2 {
+				font-size: 1.4rem;
+			}
+		}
+		
+		.gridBoxServ {
+			grid-template-areas: 'titulo titulo img img' 'parrafo parrafo img img';
+			padding: 5rem 4rem;
+			h3 {
+				padding-top: 0px;
+				padding-right: 10px;
+				font-size: 1.3rem;
+				text-align: start;
+			}
+			p {
+				padding: 10px 10px 0px 0px;
+				font-size: 0.9rem;
+				text-align: start;
+			}
+		}
+		.gridBoxServ2 {
+			grid-template-areas: 'img img titulo titulo' 'img img parrafo parrafo';
+			padding: 5rem 4rem;
+			h3 {
+				padding-top: 0px;
+				padding-left: 10px;
+				font-size: 1.3rem;
+				text-align: start;
+			}
+			p {
+				padding: 10px 0px 0px 10px;
+				font-size: 0.9rem;
+				text-align: start;
+			}
+		}
+		.serv4 {
+			padding: 5rem 2rem;
+			h3 {
+				padding-bottom: 25px;
+				width: unset;
 			}
 		}
 	}
-	.mainIndex__imagen {
-		margin: ($pixels - 10px) /3;
-		padding: $pixels /5;
-		align-items: center;
-		max-width: ($pixels *2) + 50px;
-		display: flex;
-		flex-direction: column;
-	}
-	.mainIndex__description {
-		display: flex;
-		display: inline-block;
-		width: 50%;
-	}
 
-
-	.containerCirugiaDescription {
-		width: 50%;
-		align-items: center;
-		justify-items: center;
+@media only screen and (min-width: 992px) {
+	.contBg {
+	  background-image: url(../img/wallpaperCirugiaPlastica.jpg);
 	}
+	.contPadding {
+	  padding-top: 0px; } }
 
-	main.mainGaleria {
+@media only screen and (min-width: 1000px) {
+	.mainGaleria {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(4, auto);
-		grid-gap: $pixels /5;
-	}
-	.footer__container {
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(1, auto);
-		grid-gap: $pixels /5;
-	}
-
-	.logoFooter {
-		img{
-			width: ($pixels *2) + 50px;
+		div {
+			img {
+				width: ($pixels *3) +50px;
+			}
 		}
 	}
-}
+	.galeriaBg {
+		background-image: url(../img/bannerEstetica.jpg);
+	}
 
-@media only screen and (min-width:768px) {
-	.artCirugiaPlastica {
-		height: 500px;
-		flex-direction: row;
-		margin: $pixels /5;
-		justify-content: space-around;
-    	align-items: center;
-		p {
-			margin: $pixels /5;
-		}
+	.medBg {
+		background-image: url(../img/bannerMedicinaEstetica3.jpg);
+	}
+	
+	.servBg {
+		background-image: url(../img/bannerCirugiaPlastica.jpg);
+	}
+	.gridBoxServ {
+		padding: 6rem 5rem;
 		h3 {
-			margin: $pixels /5;
+			font-size: 1.5rem;
+			align-self: center;
+			padding-top: 10px;
 		}
-		img {
-			width: $pixels *3;
+		p {
+			font-size: 1.1rem;
+			padding: 5px 10px 0px 0px;
+			align-self: center;
+		}
+	}
+	.gridBoxServ2 {
+		padding: 6rem 5rem;
+		h3 {
+			font-size: 1.5rem;
+			align-self: center;
+			padding-top: 10px;
+		}
+		p {
+			font-size: 1.1rem;
+			padding: 5px 0px 0px 10px;
+			align-self: center;
+		}
+	}
+	.serv4 {
+		padding: 5rem 2rem;
+		h3 {
+			padding-bottom: 25px;
+			width: unset;
 		}
 	}
 }
-@media only screen and (min-width:1100px) {
-	main.mainGaleria {
+
+@media only screen and (min-width: 1200px) {
+
+	.mainGaleria {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, auto);
-	}	
+		div {
+			img {
+				width: ($pixels *3) +50px;
+			}
+		}
+	}
+	
+	.gridBoxServ {
+		padding: 5rem 6rem;
+		h3 {
+			font-size: 1.6rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
+	.gridBoxServ2 {
+		padding: 5rem 6rem;
+		h3 {
+			font-size: 1.6rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
+	.serv4 {
+		padding: 5rem 2rem;
+		h3 {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+
+	.galeriaBg {
+		background-image: url(../img/bannermedicinaestetica-1030x360.jpg);
+	}
+
+	.mainGaleria {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+		div {
+			img {
+				width: $pixels *4;
+			}
+		}
+	}
+	
+	.gridBoxServ {
+		padding: 7rem 8rem;
+		img {
+			width: 80%;
+		}
+		h3 {
+			font-size: 1.9rem;
+			letter-spacing: 1px;
+			text-align: start;
+			margin-left: 3rem;
+		}
+		p {
+			font-size: 1.3rem;
+			letter-spacing: 1.2px;
+			margin-left: 3rem;
+		}
+	}
+	.gridBoxServ2 {
+		padding: 7rem 8rem;
+		img {
+			width: 80%;
+		}
+		h3 {
+			font-size: 1.9rem;
+			letter-spacing: 1px;
+			text-align: start;
+			margin-right: 3rem;
+		}
+		p {
+			font-size: 1.3rem;
+			letter-spacing: 1.2px;
+			margin-right: 3rem;
+		}
+	}
 }
 
 
