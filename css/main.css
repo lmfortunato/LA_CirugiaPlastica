@@ -109,6 +109,8 @@ a:focus {
   background-color: white; }
   .mainIndex .carousel {
     padding: 0; }
+  .mainIndex #carouselDesktop {
+    display: none; }
 
 /* MAIN CIRUGIA PLASTICA */
 #serviciosBody {
@@ -124,6 +126,8 @@ a:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  .servBg h1, .servBg h2 {
+    color: white; }
 
 .serv4 {
   display: flex;
@@ -227,6 +231,8 @@ svg {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  .medBg h1, .medBg h2 {
+    color: white; }
 
 .btn-primary {
   color: #fff;
@@ -384,6 +390,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  .galeriaBg h1, .galeriaBg h2 {
+    color: white; }
 
 /* MAIN CONTACTO */
 .maps {
@@ -401,6 +409,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  .contBg h1, .contBg h2 {
+    color: white; }
 
 .contPadding {
   padding-top: 15px; }
@@ -521,6 +531,10 @@ section {
       font-size: 1.2rem; } }
 
 @media only screen and (min-width: 600px) {
+  .mainIndex #carouselMobile {
+    display: none; }
+  .mainIndex #carouselDesktop {
+    display: block; }
   .servBg {
     background-image: url(../img/wallpaperCirugiaPlastica.jpg); }
   .galeriaBg {

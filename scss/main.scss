@@ -141,6 +141,9 @@ a {
 	.carousel {
 		padding: 0;
 	}
+	#carouselDesktop {
+		display: none;
+	}
 }
 
 /* MAIN CIRUGIA PLASTICA */
@@ -158,6 +161,9 @@ a {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	h1, h2 {
+		color: white;
+	}
 }
 .serv4 {
 	display: flex;
@@ -281,6 +287,9 @@ svg {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	h1, h2 {
+		color: white;
+	}
 }
 
 .btn-primary {
@@ -464,6 +473,9 @@ section {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	h1, h2 {
+		color: white;
+	}
 	
 }
 
@@ -484,6 +496,9 @@ section {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	h1, h2 {
+		color: white;
+	}
 }
 .contPadding {
 	padding-top: 15px;
@@ -640,6 +655,14 @@ section {
 }
 
 @media only screen and (min-width: 600px) {
+	.mainIndex {
+		#carouselMobile {
+			display: none;
+		}
+		#carouselDesktop {
+			display: block;
+		}
+	}
 	.servBg {
 		background-image: url(../img/wallpaperCirugiaPlastica.jpg);
 	}
